@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HouseHunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🏠 HouseHunt - Find Your Perfect Rental Home</h1>
+
+    <div class="filters">
+        <select id="locationFilter">
+            <option value="all">All Locations</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Bangalore">Bangalore</option>
+        </select>
+
+        <select id="priceFilter">
+            <option value="all">All Prices</option>
+            <option value="10000">Below 10000</option>
+            <option value="20000">Below 20000</option>
+        </select>
+
+        <button onclick="filterHouses()">Search</button>
+    </div>
+
+    <div id="houseList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
